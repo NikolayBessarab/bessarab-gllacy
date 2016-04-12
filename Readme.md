@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Nikolay Bessarab](https://up.htmlacademy.ru/htmlcss/13/user/184459).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Приловский](https://htmlacademy.ru/profile/id3642).
 
 ---
 
