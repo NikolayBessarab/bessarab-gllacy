@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Глейси</title>
+    <title>Каталог Глейси</title>
   </head>
   <body>
     <header class="main-header">
@@ -11,7 +11,7 @@
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Каталог</a>
+              <a class="navigation-highlighted" href="#">Каталог</a>
             </li>
             <li>
               <a href="#">Доставка и оплата</a>
@@ -42,8 +42,83 @@
         <p>8 812 450-25-25</p>
       </div>
     </header>
-
-
+    <div class="catalog-content">
+      <main class="container">
+      <ul class="catalog-content-breadcrumbs">
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Каталог</a>
+        </li>
+        <li>
+          <a class="breadcrumbs-highlighted" href="#">Сливочное</a>
+        </li>
+      </ul>
+      <h1 class="catalog-content-title">Сливочное мороженое</h1>
+      <main class="container">
+        <form action="#" method="post" enctype="multipart/form-data">
+          <fieldset>
+            <legend class="filter-name">Сортировка:</legend>
+            <label>
+              <select name="filter-sorting">
+                <option value="popularity">по популярности</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend class="filter-name">Цена: 100 руб. – 500 руб.</legend>
+            <label>
+              <select name="filter-price">
+                <input><!-- без понятия, что за форма или плагин -->
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend class="filter-name">Жирность:</legend>
+            <label>
+              <input type="radio" name="fatness" value="0">
+              0%
+            </label>
+            <label>
+              <input type="radio" name="fatness" value="upon-10" checked>
+              до 10%
+            </label>
+            <label>
+              <input type="radio" name="fatness" value="upon-30">
+              до 30%
+            </label>
+            <label>
+              <input type="radio" name="fatness" value="above-30">
+              выше 30%
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend class="filter-name">Наполнители:</legend>
+            <label>
+              <input type="checkbox" name="fill" value="chocolate">
+              шоколадные
+            </label>
+            <label>
+              <input type="checkbox" name="fill" value="powder">
+              сахарные присыпки
+            </label>
+            <label>
+              <input type="checkbox" name="fill" value="fruit">
+              фрукты
+            </label>
+            <label>
+              <input type="checkbox" name="fill" value="syrop">
+              сиропы
+            </label>
+            <label>
+              <input type="checkbox" name="fill" value="jam">
+              джемы
+            </label>
+          </fieldset>
+          <input type="submit" value="Применить">
+        </form>
+      </main>
 
     <footer class="main-footer">
       <div class="container">
