@@ -3,7 +3,8 @@ body {
 	line-height: 22px;
 	color: #fff;
 	font-weight: medium;
-	font-family: "Roboto"
+	font-family: "Roboto";
+	background-color: #849d8f;
 }
 
 h1 {
@@ -12,7 +13,7 @@ h1 {
 	font-weight: bold;
 }
 
-h1 {
+h2 {
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: medium;
