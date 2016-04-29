@@ -83,7 +83,7 @@ h2 {
 	background: rgba(128, 128, 0, 0.2);
 }
 
-.index-info {
+.info {
 	clear: right;
 	float: right;
 	margin-right: 30px;
@@ -199,6 +199,15 @@ h2 {
 	background: rgba(128, 0, 0, 0.2);
 }
 
+.catalog-showcase {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0 10px;
+	margin-bottom: 40px;
+	outline: solid rgba(128, 0, 0, 1) 3px;
+	background: rgba(128, 0, 0, 0.2);
+}
+
 .index-showcase-item {
 	float: left;
 	width: 260px;
@@ -212,7 +221,21 @@ h2 {
 	margin-right: 0;
 }
 
-.index-showcase-price {
+.catalog-showcase-item {
+	float: left;
+	width: 260px;
+	min-height: 325px;
+	margin-right: 33px;
+	margin-bottom: 35px;
+	outline: solid rgba(128, 128, 0, 1) 3px;
+	background: rgba(128, 128, 0, 0.2);
+}
+
+.catalog-showcase-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.showcase-price {
 	margin-top: -50px;
 }
 
@@ -367,6 +390,79 @@ h2 {
 	background: rgba(128, 128, 0, 0.2);
 }
 
+.catalog-content .container {
+	margin-top: -25px;
+}
+
+.catalog-content-breadcrumbs {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0 10px;
+	margin-bottom: 20px;
+	outline: solid rgba(128, 0, 0, 1) 3px;
+	background: rgba(128, 0, 0, 0.2);
+}
+
+.catalog-content-title {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0 10px;
+	margin-top: -15px;
+	margin-bottom: 20px;
+	outline: solid rgba(128, 0, 0, 1) 3px;
+	background: rgba(128, 0, 0, 0.2);
+}
+
+.catalog-content-breadcrumbs li {
+	display: inline-block;
+}
+
 .catalog-form {
-	
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0 10px;
+	margin-bottom: 40px;
+	outline: solid rgba(128, 0, 0, 1) 3px;
+	background: rgba(128, 0, 0, 0.2);
+}
+
+.filter-sorting {
+	display: inline-block;
+	width: 160px;
+	margin-bottom: 15px;
+}
+
+.filter-price {
+	display: inline-block;
+	width: 200px;
+	margin-bottom: 15px;
+}
+
+.filter-fatness {
+	display: inline-block;
+	width: 400px;
+	margin-bottom: 15px;
+}
+
+.filter-fill {
+	display: inline-block;
+	width: 600px;
+}
+
+.catalog-content-pages {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0 10px;
+	margin-bottom: 35px;
+	outline: solid rgba(128, 0, 0, 1) 3px;
+	background: rgba(128, 0, 0, 0.2);
+}
+
+.catalog-content-pages li {
+	margin-top: 5px;
+	display: inline-block;
+}
+
+.catalog-content-pages li:first-child {
+	margin-left: 960px;
 }
