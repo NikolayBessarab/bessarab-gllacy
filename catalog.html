@@ -9,19 +9,17 @@
   <body class="catalog">
     <header class="main-header">
       <div class="container clearfix">
+        <a class="logo-small" href="#"><img src="img/logo-small.svg"></a>
         <nav class="main-navigation">
           <ul>
             <li>
-              <a class="logo-small" href="#"><img src="img/logo-small.svg"></a>
-            </li>
-            <li class="highlighted">
-              <a href="#"><p class="underline">Каталог</p></a>
+              <a class="highlighted" href="#">Каталог</a>
             </li>
             <li>
-              <a href="#"><p class="underline">Доставка и оплата</p></a>
+              <a href="#">Доставка и оплата</a>
             </li>
             <li>
-              <a href="#"><p class="underline">О Компании</p></a>
+              <a href="#">О Компании</a>
             </li>
           </ul>
         </nav>
@@ -72,60 +70,41 @@
               <select name="filter-name">
                 <option value="popularity">по популярности</option>
               </select>
+              <span class="arrow-top"></span>
             </label>
           </fieldset>
           <fieldset class="filter-price">
             <legend class="filter-name">Цена: 100 руб. – 500 руб.</legend>
             <label>
-              <select name="filter-price">
-                <!-- без понятия, что за форма или плагин -->
-              </select>
+              <input type="range" name="filter-price"><div></div>
             </label>
           </fieldset>
           <fieldset class="filter-fatness">
             <legend class="filter-name">Жирность:</legend>
             <div class="filter-fatness-back">
-              <label>
-                <input type="radio" name="fatness" value="0">
-                0%
-              </label>
-              <label>
-                <input type="radio" name="fatness" value="upon-10" checked>
-                до 10%
-              </label>
-              <label>
-                <input type="radio" name="fatness" value="upon-30">
-                до 30%
-              </label>
-              <label>
-                <input type="radio" name="fatness" value="above-30">
-                выше 30%
-              </label>
+              <input type="radio" id="fat-0" name="fatness" value="0">
+              <label for="fat-0"><span></span>0%</label>
+                <input type="radio" id="fat-10" name="fatness" value="upon-10" checked>
+              <label for="fat-10"><span ></span>до 10%</label>
+                <input type="radio" id="fat-30" name="fatness" value="upon-30">
+              <label for="fat-30"><span></span>до 30%</label>
+                <input type="radio" id="fat-more-30" name="fatness" value="above-30">
+              <label for="fat-more-30"><span></span>выше 30%</label>
             </div>
           </fieldset>
           <fieldset class="filter-fill">
             <legend class="filter-name">Наполнители:</legend>
             <div class="filter-fill-back">
-              <label>
-                <input type="checkbox" name="fill" value="chocolate">
-                шоколадные
-              </label>
-              <label>
-                <input type="checkbox" name="fill" value="powder">
-                сахарные присыпки
-              </label>
-              <label>
-                <input type="checkbox" name="fill" value="fruit">
-                фрукты
-              </label>
-              <label>
-                <input type="checkbox" name="fill" value="syrop">
-                сиропы
-              </label>
-              <label>
-                <input type="checkbox" name="fill" value="jam">
-                джемы
-              </label>
+              <input type="checkbox" id="fill-choko" name="fill" value="chocolate" checked>
+              <label for="fill-choko"><span></span>шоколадные</label>
+              <input type="checkbox" id="fill-sugar" name="fill" value="powder" checked>
+              <label for="fill-sugar"><span></span>сахарные присыпки</label>
+              <input type="checkbox" id="fill-fruit" name="fill" value="fruit">
+              <label for="fill-fruit"><span></span>фрукты</label>
+              <input type="checkbox" id="fill-syrop" name="fill" value="syrop">
+              <label for="fill-syrop"><span></span>сиропы</label>
+              <input type="checkbox" id="fill-jam" name="fill" value="jam">
+              <label for="fill-jam"><span></span>джемы</label>
             </div>
           </fieldset>
           <input class="catalog-form-btn" type="submit" value="Применить">
@@ -139,8 +118,10 @@
               </div>
             </div>  
             <div class="showcase-description">
-              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <a href="#" class="catalog-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <a href="#" class="catalog-item-btn">Быстрый просмотр</a>
             </div>
+            <div class="catalog-item-bg"></div>
           </article>
           <article class="catalog-showcase-item">
             <div class="showcase-photo">
