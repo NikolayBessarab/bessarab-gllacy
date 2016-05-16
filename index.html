@@ -9,44 +9,59 @@
   <body class="index">
   	<header class="main-header">
   		<div class="container clearfix">
-        <a class="logo-small" href="#"><img src="img/logo-small.svg"></a>
+        <a class="logo-small" href="#"><img src="img/logo-small.svg" alt="Логотипчик"></a>
   			<nav class="main-navigation">
   				<ul>
-						<li>
-							<a href="#">Каталог</a>
+						<li class="main-navigation-li">
+							<a class="main-navigation-a" href="#">Каталог</a>
               <ul class="main-navigation-sub">
-                <li>Новинки</li>
-                <li>Сливочное</li>
-                <li>Щербеты</li>
-                <li>Фруктовый лед</li>
-                <li>Мелорин</li>
-	            </ul>
+                <li><a class="sub-a sub-a-first" href="#">Новинки</a></li>
+                <li><a class="sub-a" href="#">Сливочное</a></li>
+                <li><a class="sub-a" href="#">Щербеты</a></li>
+                <li><a class="sub-a" href="#">Фруктовый лед</a></li>
+                <li><a class="sub-a" href="#">Мелорин</a></li>
+              </ul>
 						</li>
 						<li>
-							<a href="#">Доставка и оплата</a>
+							<a class="main-navigation-a" href="#">Доставка и оплата</a>
 						</li>
 						<li>
-							<a href="#">О Компании</a>
+							<a class="main-navigation-a" href="#">О Компании</a>
 						</li>
 					</ul>
   			</nav>
   			<div class="user-block">
-  				<div class="search">
-  					<form action="#" method="post">
-							<input type="search" value="">
-						</form>
-  				</div>
-  				<div class="login">
-  					<a class="login-btn" href="#">
-							Вход
+	  			<div class="user-block-search">
+	  				<div class="search">
+	  					<form action="#" method="post">
+								<input type="search" placeholder="Что ищем?" value="" name="search-stuff">
+							</form>
+	  				</div>
+	  			</div>
+	  			<div class="user-block-login">
+	  				<div class="login">
+	  					<a class="login-btn" href="#">
+								Вход
+							</a>
+							<div class="modal-content">
+					      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+					        <input class="icon-user" type="text" name="login" placeholder="Логин">
+					        <input class="icon-password" type="password"  name="password" placeholder="Пароль">
+					        <a class="restore" href="#">Я забыл пароль!</a>
+					        <a class="restore" href="#">Я забыл пароль!</a>
+					        <button class="btn" type="submit">Войти</button>
+					      </form>
+    					</div>
+	  				</div>
+	  			</div>
+	  			<div class="user-block-purchases">
+	  				<div class="purchases">
+	  					<a class="purchases-view" href="#">
+							Пусто
 						</a>
-  				</div>
-  				<div class="purchases">
-  					<a class="purchases-view" href="#">
-						Пусто
-					</a>
-  				</div>
-  			</div>
+	  				</div>
+					</div>
+				</div>
   			<div class="info">
   				<p>С 10 до 20, ежедневно</p>
   				<p>8 812 450-25-25</p>
@@ -91,9 +106,13 @@
 				<article class="index-showcase-item hit">
 	  			<div class="showcase-photo">
   	  			<img src="img/icecream-1.png" width="267" height="267" alt="Итем-1">
-          <div class="showcase-description">
-            <a href="#" class="item-name">Сливочно-клубничное с присыпкой из белого шоколада</a>
-            <a href="#" class="item-btn">Быстрый просмотр</a>
+  	  			<div class="showcase-price">
+              <p>310<span>/кг</span></p>
+            </div>
+  	  		</div>
+	        <div class="showcase-description">
+	            <a href="#" class="item-name">Сливочно-клубничное с присыпкой из белого шоколада</a>
+	            <a href="#" class="item-btn">Быстрый просмотр</a>
           </div>
           <div class="item-bg"></div>
 				</article>
@@ -169,7 +188,7 @@
 						<a href="#" class="index-feedback">Форма обратной связи</a>
 				  </div>
 				</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123861!2d30.320894615974638!3d59.93879686904812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462791546525" width="100%" height="429" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123861!2d30.320894615974638!3d59.93879686904812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462791546525" height="429" allowfullscreen></iframe>
 		</div>
   	<footer class="main-footer">
   	  <div class="container clearfix">
