@@ -194,7 +194,6 @@ iframe {
 .user-block-search {
 	float: left;
 	padding-bottom: 5px;
-	font-weight: 500;
 }
 
 .user-block-search form {
@@ -205,7 +204,7 @@ iframe {
 	content: "";
 	position: absolute;
 	display: block;
-	top: 35px;
+	top: 36px;
 	right: 0px;
 	width: 340px;
 	height: 85px;
@@ -241,8 +240,16 @@ iframe {
 	background: #f7f6f3 url("../img/icon-search-black.svg") no-repeat center;
 }
 
-.login a {
+.user-block-login {
+	float: left;
+	padding-bottom: 5px;
+}
+
+.login {
 	position: relative;
+}
+
+.login-btn {
 	float: left;
 	margin-top: 15px;
 	margin-right: 10px;
@@ -255,7 +262,7 @@ iframe {
 	background: rgba(255, 255, 255, 0.2) url("../img/icon-login.svg") no-repeat 22% 50%;
 }
 
-.login a:hover {
+.login-btn:hover {
 	color: #323232;
 	background: #f7f6f3 url("../img/icon-login-black.svg") no-repeat 22% 50%;
 }
@@ -264,7 +271,104 @@ iframe {
 	display: none;
 }
 
-.purchases a {
+.user-block-login:hover .modal-content {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 51px;
+	right: 0px;
+	width: 275px;
+	height: 215px;
+	border-radius: 6px;
+	background-color: #f8f7f4;
+  box-shadow: 0 20px 20px 0.5px rgba(0, 0, 0, 0.3); 
+}
+
+.icon-user {
+	margin-top: 20px;
+	margin-left: 20px;
+	padding-left: 15px;
+	width: 218px;
+	height: 45px;
+	border-radius: 6px;
+	font-weight: normal;
+	color: 999999;
+	border: solid 1px #d1d0ce;
+}
+
+.icon-password {
+	margin-top: 20px;
+	margin-left: 20px;
+	padding-left: 15px;
+	width: 218px;
+	height: 45px;
+	border-radius: 6px;
+	font-weight: normal;
+	color: 999999;
+	border: solid 1px #d1d0ce;
+}
+
+.login-form-btn {
+	float: left;
+	margin: 17px 20px;
+	padding: 0px 18px;
+	border-radius: 23px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ffffff;
+	background: #e74b36;
+	border: none;
+	box-shadow: 0px 1px 4px #ac1000,
+	inset 0px 55px 20px -30px #f26843;
+}
+
+.login-form-btn:hover {
+	background: #ec6f5e;
+	box-shadow: 0px 2px 3px #ac1000,
+	inset 0px 90px 30px -60px #f58569;
+}
+
+.login-form-btn:active {
+	background: #f26843;
+	box-shadow: inset 0px 2px 3px #ac1000,
+	inset 0px 90px 30px -60px #e74b36;
+}
+
+.restore {
+	float: left;
+	margin-top: 15px;
+	font-size: 13px;
+	color: #323232;
+}
+
+.restore:hover {
+	color: #e84d37;
+}
+
+.restore:active {
+	color: #e84d37;
+}
+
+.new-reg {
+	float: left;
+	margin-top: -3px;
+	font-size: 13px;
+	color: #323232;
+}
+
+.new-reg:hover {
+	color: #e84d37;
+}
+
+.new-reg:active {
+	color: #e84d37;
+}
+
+
+.purchases-view {
 	float: left;
 	margin-top: 15px;
 	padding: 5px 35px;
@@ -276,26 +380,37 @@ iframe {
 	background: rgba(255, 255, 255, 0.2) url("../img/icon-purchases.svg") no-repeat 18% 50%;
 }
 
-.purchases a:hover {
+.purchases-view:hover {
 	color: #323232;
 	background: #f7f6f3 url("../img/icon-purchases-black.svg") no-repeat 18% 50%;
 }
 
-.purchases-highlighted a {
+.purchases-highlighted .purchases-view {
 	padding-right: 16px;
 	color: #323232;
 	background: #f8f7f4 url("../img/icon-purchases-highlighted.png") no-repeat 17% 50%;
 }
 
-.purchases-highlighted a:hover {
+.purchases-highlighted .purchases-view:hover {
 	background: #f8f7f4 url("../img/icon-purchases-highlighted.png") no-repeat 17% 50%;
+}
+
+.purchases-container {
+	display: none;
+}
+
+.user-block-purchases:hover .purchases-container {
+	display: block;
+	position: absolute;
+	top: 35px;
+	right: 0;
 }
 
 .info {
 	clear: right;
 	float: right;
 	margin-right: 27px;
-	margin-top: 10px;
+	margin-top: 5px;
 	text-align: right;
 	line-height: 4px;
 	font-weight: bold;
@@ -330,6 +445,10 @@ iframe {
 	font-size: 14px;
 	line-height: 22px;
 	vertical-align: top;
+}
+
+.breadcrumbs-arrow::after {
+	content: "»";
 }
 
 .catalog-content-breadcrumbs a {
@@ -868,7 +987,7 @@ a.breadcrumbs-highlighted {
 	width: 1005;
 	min-height: 430px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0;
 }
 
 .index-adress {
